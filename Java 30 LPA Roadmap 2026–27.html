@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Java 30 LPA Roadmap 2026–27</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--tx:#1d2433;--mu:#5d6780;--bd:#e3e7f1;--a:#5b5bf0;--b:#06b6d4;--c:#f59e0b;--d:#10b981;--e:#ec4899;--hero1:#4338ca;--hero2:#0891b2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1320;--card:#181d30;--tx:#e8ecf8;--mu:#9aa5c4;--bd:#2a3150;--hero1:#312e81;--hero2:#0e7490}}
+:root[data-theme="dark"]{--bg:#0f1320;--card:#181d30;--tx:#e8ecf8;--mu:#9aa5c4;--bd:#2a3150;--hero1:#312e81;--hero2:#0e7490}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:48px 20px 40px;text-align:center}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,5vw,42px)}
+.hero p{margin:4px auto;max-width:720px;opacity:.92}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:99px;font-size:13px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--bd);display:flex;gap:4px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--mu);padding:6px 12px;border-radius:8px;font-size:14px;font-weight:600}
+nav a:hover{background:var(--bg);color:var(--a)}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 60px}
+section{margin-top:36px}
+h2{font-size:24px;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+h2:before{content:"";width:6px;height:26px;border-radius:4px;background:linear-gradient(var(--a),var(--b))}
+.sub{color:var(--mu);margin:0 0 16px}
+.note{background:linear-gradient(90deg,rgba(245,158,11,.15),transparent);border-left:4px solid var(--c);padding:12px 16px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-top:4px solid var(--k,var(--a));border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.card h3{margin:0 0 4px;font-size:17px;color:var(--k,var(--a))}
+.card .tag{font-size:12px;color:var(--mu);margin-bottom:8px;display:block}
+.card ul{margin:0;padding:0;list-style:none}
+.card li{padding:5px 0;border-bottom:1px dashed var(--bd);font-size:14.5px}
+.card li:last-child{border:0}
+.card li label{display:flex;gap:8px;cursor:pointer;align-items:flex-start}
+.card input{accent-color:var(--k,var(--a));margin-top:5px}
+.card input:checked+span{text-decoration:line-through;opacity:.55}
+.bar{height:10px;background:var(--bd);border-radius:9px;overflow:hidden;margin:10px 0 4px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--d),var(--b));transition:width .3s}
+.tl{position:relative;padding-left:26px;border-left:3px solid var(--bd);margin-left:8px}
+.ph{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;margin-bottom:16px}
+.ph:before{content:"";position:absolute;left:-36px;top:18px;width:16px;height:16px;border-radius:50%;background:var(--k);border:3px solid var(--bg)}
+.ph b{color:var(--k)}
+.ph small{display:block;color:var(--mu)}
+.ph p{margin:6px 0 0;font-size:14.5px}
+pre{background:#12172b;color:#c9d4ff;padding:16px;border-radius:12px;overflow-x:auto;font-size:13.5px}
+.names{display:flex;flex-wrap:wrap;gap:10px}
+.names code{background:var(--card);border:1px solid var(--bd);padding:7px 14px;border-radius:10px;font-weight:600}
+.names code.pick{background:linear-gradient(135deg,var(--a),var(--e));color:#fff;border:0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--bd);font-size:14.5px}
+th{background:var(--a);color:#fff}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:20px}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>☕ Java Developer Roadmap → 30 LPA</h1>
+<p>From PL/SQL apprentice (Nov 2025) to product-company backend engineer (end of 2027) — Arrow Electronics monitoring team, Bengaluru.</p>
+<div class="chips"><span class="chip">Nov 2026 → Dec 2027</span><span class="chip">DSA 40%</span><span class="chip">Spring Boot + Kafka</span><span class="chip">System Design</span><span class="chip">AI / RAG</span></div>
+</header>
+<nav><a href="#reality">Reality</a><a href="#skills">Skills</a><a href="#roadmap">Roadmap</a><a href="#daily">Daily Plan</a><a href="#projects">Projects</a><a href="#git">Git</a><a href="#targets">Targets</a></nav>
+<main>
+
+<section id="reality"><div class="note"><b>Honest reality check:</b> 30 LPA total comp at a product company is achievable in Bengaluru, but not with Java alone. Interviews filter on <b>DSA first</b>, then LLD/system design, then core Java and backend depth. Your <b>PL/SQL and SQL strength</b> is a real edge, and your <b>monitoring role</b> gives production stories (job failures, logs, alerts) for interviews.</div></section>
+
+<section id="skills">
+<h2>Complete Skill Set</h2>
+<p class="sub">Tick items as you finish them — progress is saved in your browser.</p>
+<div class="bar"><i id="pb"></i></div><small id="pt" style="color:var(--mu)"></small>
+<div class="grid" id="skillGrid" style="margin-top:14px"></div>
+</section>
+
+<section id="roadmap">
+<h2>Roadmap: Nov 2026 – Dec 2027</h2>
+<p class="sub">DSA runs continuously: min 5 problems/week in phases 1–4, daily in phase 5.</p>
+<div class="tl">
+<div class="ph" style="--k:#5b5bf0"><b>Phase 1 · Nov–Dec 2026</b><small>Foundation</small><p>Java refresh (8→21), OOP, collections, streams. Start DSA (arrays, hashing, two pointers). Git + Linux basics.</p></div>
+<div class="ph" style="--k:#06b6d4"><b>Phase 2 · Jan–Mar 2027</b><small>Spring ecosystem</small><p>Spring Boot, REST, JPA/Hibernate, Spring Security, JUnit/Mockito, advanced SQL, Docker. <b>Project 1.</b></p></div>
+<div class="ph" style="--k:#10b981"><b>Phase 3 · Apr–Jun 2027</b><small>Depth &amp; distribution</small><p>Concurrency, JVM internals, Redis, Kafka, microservices, AWS basics. <b>Project 2.</b></p></div>
+<div class="ph" style="--k:#f59e0b"><b>Phase 4 · Jul–Sep 2027</b><small>Design &amp; AI</small><p>LLD then HLD, OS and networks, RAG/AI project with Spring AI. <b>Project 3.</b></p></div>
+<div class="ph" style="--k:#ec4899"><b>Phase 5 · Oct–Dec 2027</b><small>Launch</small><p>Mock interviews, resume, DSA revision (daily), referrals, apply widely.</p></div>
+</div>
+</section>
+
+<section id="daily">
+<h2>Daily Schedule</h2>
+<div class="wrap"><table>
+<tr><th>When</th><th>Time</th><th>Plan</th></tr>
+<tr><td>Weekdays</td><td>2–3 hrs</td><td>1 hr DSA + 1–1.5 hrs current topic</td></tr>
+<tr><td>Weekends</td><td>4–5 hrs</td><td>Project building + one system design topic</td></tr>
+<tr><td>Monthly</td><td>—</td><td>Mock interview, resume update, review checklist</td></tr>
+</table></div>
+</section>
+
+<section id="projects">
+<h2>Projects Worth Building</h2>
+<div class="grid">
+<div class="card" style="--k:#5b5bf0"><h3>1 · Job Monitoring &amp; Alerting Platform</h3><span class="tag">Spring Boot · PostgreSQL · Kafka · Grafana</span>Ties directly to your work; the best interview story you have.</div>
+<div class="card" style="--k:#10b981"><h3>2 · E-commerce / Payments Backend</h3><span class="tag">Microservices · Redis · Docker</span>Idempotent APIs, caching, retries, saga pattern.</div>
+<div class="card" style="--k:#ec4899"><h3>3 · AI Log Analyzer / Support Assistant</h3><span class="tag">RAG · Spring AI · pgvector</span>LLM-integrated backend using embeddings and tool calling.</div>
+</div>
+</section>
+
+<section id="git">
+<h2>Git Repository Name</h2>
+<div class="names"><code class="pick">java-engineer-journey ★</code><code>zero-to-sde2-java</code><code>backend-craft</code><code>javaforge</code></div>
+<pre>java-engineer-journey/
+├── 01-core-java/
+├── 02-dsa/
+├── 03-spring-boot/
+├── 04-system-design/     (LLD code + HLD notes)
+├── 05-projects/
+├── 06-os-networks-notes/
+└── README.md             (progress log)</pre>
+<p class="sub">Commit daily; a green contribution graph helps with recruiters.</p>
+</section>
+
+<section id="targets">
+<h2>Target Companies</h2>
+<div class="names"><code>Amazon</code><code>Atlassian</code><code>Walmart Global Tech</code><code>PayPal</code><code>Intuit</code><code>Adobe</code><code>Uber</code><code>Razorpay</code><code>PhonePe</code><code>Flipkart</code><code>Swiggy</code></div>
+<p class="note" style="margin-top:14px">With ~2 years of experience, offers of 25–40 LPA total comp exist but are very competitive. Aim for the top tier while keeping 18–25 LPA companies as a safety net.</p>
+</section>
+</main>
+<footer>Built for your Java journey · keep shipping every day 🚀</footer>
+
+<script>
+const S=[
+["A · Core Java","#5b5bf0","Must be strong",["Java 8→21: OOP, collections, generics, exceptions, String internals","Streams, lambdas, Optional, records, sealed classes, switch patterns","Concurrency: ExecutorService, CompletableFuture, locks, volatile, synchronized, virtual threads","JVM: memory model, GC types, class loading, heap/thread dumps","HashMap/ConcurrentHashMap internals, equals/hashCode, immutability"]],
+["B · DSA","#ef4444","~40% of effort",["Arrays, strings, hashing, two pointers, sliding window, binary search","Linked list, stack, queue, heap, trees, BST, tries, graphs","Recursion, backtracking, DP, greedy, intervals, union-find","400–500 LeetCode problems: NeetCode 150 → Blind 75 → company-tagged"]],
+["C · Backend Frameworks","#06b6d4","Spring ecosystem",["Spring Core (IoC, DI), Spring Boot, MVC/REST","Spring Data JPA/Hibernate (N+1, lazy loading, transactions)","Spring Security (JWT, OAuth2), validation, exception handling","Spring Cloud: API Gateway, config, Resilience4j","Testing: JUnit 5, Mockito, Testcontainers","Maven / Gradle"]],
+["D · Databases","#10b981","Your edge",["Advanced SQL: window functions, CTEs, query plans, indexing","Isolation levels, locking, ACID, normalization","PostgreSQL or MySQL","Redis caching patterns, MongoDB basics","Cassandra/DynamoDB concepts: partitioning, consistency, CAP"]],
+["E · Messaging & Distributed Systems","#f59e0b","Kafka is key",["Kafka (priority), RabbitMQ basics","Idempotency, retries, dead-letter queues, delivery semantics","Distributed locks, consensus basics, eventual consistency","Saga pattern"]],
+["F · System Design","#8b5cf6","LLD then HLD",["LLD: SOLID, patterns (Singleton, Factory, Builder, Strategy, Observer, Decorator)","Machine coding: parking lot, BookMyShow, LRU cache, rate limiter","HLD: load balancing, caching, sharding, replication, CDN, consistent hashing","API design, queues, microservices vs monolith, observability","Classics: URL shortener, chat, news feed, notifications, payments, Uber/Swiggy"]],
+["G · OS & Networking","#14b8a6","Fundamentals",["Processes vs threads, scheduling, deadlocks, virtual memory","File systems, Linux commands, shell scripting","OSI/TCP-IP, TCP vs UDP, HTTP/1.1/2/3, HTTPS/TLS, DNS","REST vs gRPC vs GraphQL, WebSockets, CORS, cookies/sessions"]],
+["H · DevOps & Cloud","#f97316","Ship it",["Git branching, rebasing; CI/CD (GitHub Actions/Jenkins)","Docker, Kubernetes basics","AWS: EC2, S3, RDS, SQS, Lambda, IAM","Prometheus, Grafana, ELK, distributed tracing (maps to your monitoring job)"]],
+["I · AI Skills","#ec4899","2027 differentiator",["Prompt engineering; using Copilot/Claude/Cursor well","LLM APIs, RAG (embeddings, pgvector), tool calling, agents","Spring AI or LangChain4j","Basic ML concepts only","Build 1–2 AI-integrated backend projects"]],
+["J · Career Skills","#64748b","Close the offer",["Clear communication and STAR stories","Resume with quantified impact","LinkedIn, referrals, mock interviews"]]
+];
+let st={};try{st=JSON.parse(localStorage.getItem("jr")||"{}")}catch(e){}
+const g=document.getElementById("skillGrid");let n=0;
+S.forEach((s,i)=>{const c=document.createElement("div");c.className="card";c.style.setProperty("--k",s[1]);
+c.innerHTML="<h3>"+s[0]+"</h3><span class='tag'>"+s[2]+"</span><ul>"+s[3].map((t,j)=>{n++;const k=i+"_"+j;return "<li><label><input type='checkbox' data-k='"+k+"'"+(st[k]?" checked":"")+"><span>"+t+"</span></label></li>"}).join("")+"</ul>";g.appendChild(c)});
+function up(){const a=g.querySelectorAll("input"),d=[...a].filter(x=>x.checked).length;
+document.getElementById("pb").style.width=(d/n*100)+"%";document.getElementById("pt").textContent=d+" / "+n+" topics done"}
+g.addEventListener("change",e=>{st[e.target.dataset.k]=e.target.checked;try{localStorage.setItem("jr",JSON.stringify(st))}catch(x){}up()});up();
+</script>
+</body>
+</html>
